@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_KtoTi"
+        android:layout_width="247dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="284dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Ты кто такой ?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/but_Say"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="140dp"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:onClick="Click_Say"
+        android:text="Поздороваться"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="65dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:shadowColor="@android:color/holo_orange_light"
+        android:text="Cчитаем"
+        app:layout_constraintBottom_toTopOf="@+id/text_KtoTi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_rez"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/but_crow"
+        android:layout_width="87dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="68dp"
+        android:background="@android:color/holo_red_light"
+        android:onClick="Click_new_crow"
+        android:text="ворон"
+        app:layout_constraintBottom_toTopOf="@+id/text_KtoTi"
+        app:layout_constraintStart_toEndOf="@+id/textView1"
+        app:layout_constraintTop_toBottomOf="@+id/text_rez"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/but_cat"
+        android:layout_width="98dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:onClick="Click_new_cat"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:text="котик"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/but_crow"
+        app:layout_constraintTop_toBottomOf="@+id/text_rez" />
+
+    <TextView
+        android:id="@+id/text_rez"
+        android:layout_width="296dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>
